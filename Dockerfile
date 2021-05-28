@@ -82,3 +82,13 @@ RUN chmod -R g=u .
 
 EXPOSE 9001
 CMD ["node", "src/node/server.js"]
+
+# Mandatory Labels
+LABEL PROJECT=slash5toaster
+LABEL MAINTAINER="slash5toaster@gmail.com"
+LABEL NAME=etherpad
+LABEL VERSION=1.8.13-cj
+LABEL GENERATE_SINGULARITY_IMAGE=true
+LABEL PRODUCTION=false
+
+#### End of File, if this is missing the file has been truncated
